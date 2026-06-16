@@ -35,7 +35,7 @@ jobs:
     - name: Build for production 
       run: |
         cargo tauri build
-        dir "./src-tauri/target/release/bundle"
+        dir "./src-tauri/target/release/bundle" -Recurse
     
     - name: Create Release
       id: create_release
